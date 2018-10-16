@@ -43,7 +43,9 @@ pipeline{
 			
 			cd sectests
 			pipenv install requests
-
+			pipenv install Flask
+			
+			pipenv run python hello.py
 			pipenv run python veracode-d-scan.py
 		'''
 	    }
